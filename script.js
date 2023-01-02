@@ -12,7 +12,7 @@ const bodyEle = document.querySelector(".body");
 //AddEventListeners
 searchBtn.addEventListener("click", function () {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${getCityName.value}&appid=c6e908417227f7899e1ed1a4b59a4259`
+    `https://api.openweathermap.org/data/2.5/weather?q=${getCityName.value}&appid=c6e908417227f7899e1ed1a4b59a4259`
   )
     .then((res) => res.json())
     .then((data) => {
